@@ -1,0 +1,26 @@
+.show{
+    height: 100vh;
+    width: 100%; 
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show h1{
+    color: white;
+}
+.show button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.show div{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
