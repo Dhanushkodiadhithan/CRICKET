@@ -3,7 +3,8 @@ import "./teamname.css";
 const Teamname = ({setstatus,setTeamA,setTeamB,TeamA,TeamB}) => {
 
   return (
-    <div className="teamname">
+    <div className="cover">
+      <div className="teamname">
       <form className="form-tn">
         <div className="head"><h1>LETS PLAY ....</h1></div>
         <div className="teamA">
@@ -18,7 +19,8 @@ const Teamname = ({setstatus,setTeamA,setTeamB,TeamA,TeamB}) => {
         <button onClick={(e)=>{e.preventDefault(); setstatus(1)}}>CONTINUE...</button>
       </form>
     </div>
-  );
+    </div>
+  ); 
 };
 
 export default Teamname;

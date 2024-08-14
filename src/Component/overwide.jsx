@@ -2,7 +2,8 @@ import React from "react";
 import "./overwide.css";
 const Overwide = ({over,setover,setstatus,widerun,setwiderun,wicket,setwicket}) => {
   return (
-    <div className="overwide">
+    <div className="cover">
+      <div className="overwide">
       <form className="form-ow">
         <div className="head"><h1>LETS PLAY ....</h1></div>
         <div className="over">
@@ -19,6 +20,7 @@ const Overwide = ({over,setover,setstatus,widerun,setwiderun,wicket,setwicket}) 
         </div>
         <button onClick={(e)=>{e.preventDefault(); setstatus(2)}}>CONTINUE...</button>
       </form>
+    </div>
     </div>
   );
 };

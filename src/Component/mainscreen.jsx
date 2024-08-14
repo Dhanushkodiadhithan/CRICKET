@@ -10,7 +10,7 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
     const [initialOver, setInitialOver] = useState(over); 
     const [initialWickets, setInitialWickets] = useState(wicket.Totalwickets); 
   
-
+ 
     useEffect(() => {
   
         if (Noofbatting === 0) {
@@ -88,7 +88,8 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
 
     return (
         <>
-            <div className="header">{batting === 0 ? <h1>{TeamA} Batting</h1> : <h1>{TeamB} Batting</h1>}</div>
+           <div className="container">
+           <div className="header">{batting === 0 ? <h1>{TeamA} Batting</h1> : <h1>{TeamB} Batting</h1>}</div>
             <div className="info">
                 <h2>OVER LEFT : {over}</h2>
                 {
@@ -127,7 +128,7 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
                     <div className="three" onClick={() => handleClick(3)}>3</div>
                     <div className="four" onClick={() => handleClick(4)}>4</div>
                     <div className="six" onClick={() => handleClick(6)}>6</div>
-                    <div className="wide" onClick={() => handleClick('Wide')}>WIDE</div>
+                    <div className="wide" onClick={() => handleClick('Wide')}>WD</div>
                     <div className="out" onClick={() => handleClick('W', true)}>W</div>
                 </div>
             </div>
@@ -135,6 +136,7 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
                 <h2>{TeamA} SCORE : {ScoreA} / {wicket.Awickets}</h2>
                 <h2>{TeamB} SCORE : {ScoreB} / {wicket.Bwickets}</h2>
             </div>
+           </div>
         </>
     );
 };

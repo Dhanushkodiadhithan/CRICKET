@@ -3,6 +3,7 @@ import "./choice.css";
 const Choice = ({ setbatting,setstatus ,TeamA,TeamB}) => {
   return (
     <>
+      <div className="cover">
       <div className="choice">
         <form className="form-choice">
           <div className="head">
@@ -15,6 +16,7 @@ const Choice = ({ setbatting,setstatus ,TeamA,TeamB}) => {
             <h2>{TeamB}</h2>
           </div>
         </form>
+      </div>
       </div>
     </>
   );

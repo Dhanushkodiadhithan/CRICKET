@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 20px;
+    padding: 20px; 
 }
 .foot{
     color: white;
@@ -114,4 +114,54 @@
     color:black;
     font-size:20px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container{
+        font-size:12px;
+    }
+    .info{
+        height: 25px;
+        padding: 5px; 
+    }
+    .middle{
+        width: 100%;
+        height: 75vh;
+        display:block;
+        padding-bottom: 20px;
+    }
+    .scoreboard{
+        width:100%;      
+    }
+    .scoreboard .right div{
+        height: 50px;
+        width: 50px;
+        font-size:40px;
+        font-weight: bold;
+    }
+    .scoreboard .left div {
+        font-size:15px;
+    }
+    .scoreboard .left{
+        grid-auto-rows: 50px;
+        padding-top: 20px;
+        gap: 15px;
+     }
+    .scoreboard .right{
+        width:100%;
+        grid-auto-rows: 50px;
+        padding: 15px;
+        gap: 15px;
+    }
+    .click{
+        flex-direction:row;
+        width:100%;
+        height:150px;
+    }
+    .zero , .one , .two , .three , .four , .six , .wide , .out{
+        width:100px;
+        height:100px;
+        margin: 0px 10px;
+        padding: 50px;
+    }
 }
