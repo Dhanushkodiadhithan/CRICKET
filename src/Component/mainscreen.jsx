@@ -102,7 +102,7 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
                     <div className="left">
                         {overNumbers.map(num => (
                             <div key={num} className="over">
-                                OVER {num}
+                                OVER_{num}
                             </div>
                         ))}
                     </div>

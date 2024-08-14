@@ -69,6 +69,8 @@
 .wide{
     font-size: 30px;
     padding: 50px;
+    background-color: blue;
+    color: white;
 }
 .out{
     background-color: red;
@@ -118,7 +120,7 @@
 
 @media (max-width: 600px) {
     .container{
-        font-size:12px;
+        font-size:10px;
     }
     .info{
         height: 25px;
@@ -126,7 +128,7 @@
     }
     .middle{
         width: 100%;
-        height: 75vh;
+        height: 70vh;
         display:block;
         padding-bottom: 20px;
     }
@@ -141,22 +143,26 @@
     }
     .scoreboard .left div {
         font-size:15px;
+
     }
     .scoreboard .left{
         grid-auto-rows: 50px;
-        padding-top: 20px;
+        padding: 10px;
         gap: 15px;
+
      }
     .scoreboard .right{
         width:100%;
         grid-auto-rows: 50px;
-        padding: 15px;
+        padding: 10px 25px;
         gap: 15px;
     }
     .click{
         flex-direction:row;
         width:100%;
         height:150px;
+        align-items:normal;
+        padding-top:10px;
     }
     .zero , .one , .two , .three , .four , .six , .wide , .out{
         width:100px;
