@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './mainscreen.css';
 
-const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwicket, widerun, setover, setbatting, setstatus, score, setScore}) => {
+const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwicket, widerun, setover, setbatting, setstatus, score, setScore, actions,setActions}) => {
     const [ScoreA, setScoreA] = useState(0);
     const [ScoreB, setScoreB] = useState(0);
     const [Noofbatting, setNoofbatting] = useState(0);
-    const [actions, setActions] = useState([]);
+    
     const [clickCount, setClickCount] = useState(0);
     const [initialOver, setInitialOver] = useState(over); 
-    const [initialWickets, setInitialWickets] = useState(wicket.Totalwickets); 
+    const [initialWickets, setInitialWickets] = useState(wicket.Maxwicket); 
   
  
     useEffect(() => {
@@ -35,10 +35,10 @@ const Mainscreen = ({ TeamA, TeamB, over, wicket, batting, wide, setwide, setwic
     }, [Noofbatting, score, setstatus]);
 
     useEffect(() => {
-        if (Noofbatting === 1 && (actions.filter(action => action.isWicket).length === wicket.Totalwickets || actions.length === initialOver * 6)) {
+        if (Noofbatting === 1 && (actions.filter(action => action.isWicket).length === initialWickets || actions.length === initialOver * 6)) {
             setstatus(4);
         }
-    }, [Noofbatting, actions, wicket.Totalwickets, initialOver, setstatus]);
+    }, [Noofbatting, actions, wicket, initialOver, setstatus]);
 
     useEffect(() => {
         if (clickCount >= 6) {
