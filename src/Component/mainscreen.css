@@ -140,6 +140,7 @@
         width: 50px;
         font-size:30px;
         font-weight: bold;
+
     }
     .scoreboard .left div {
         font-size:15px;
@@ -175,7 +176,7 @@
     }
     .scoreboard{
         box-shadow: 0 5px 10px 1px gray;
-        height: 90%;
+        height: 93%;
 
     }
 }
